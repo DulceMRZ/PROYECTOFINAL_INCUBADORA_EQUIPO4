@@ -357,37 +357,37 @@ Serial.println(Temperatura);
 
 Como se muestra en la siguente imagen.
 
-![](https://github.com/DulceMRZ/PRACTICA10_BASE_DE_DATOS_CON_ESPE32/blob/main/Captura1.PNG?raw=true)
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/libririas.PNG?raw=true)
 
 ## Paso 3
 
-3. Hacer la conexion de **HC-SR04 Ultrasonic distance sensor** con la **ESP32** como se muestra en la siguentes imagenes:
+3. Hacer la conexion de **LCD, DTH22, HC-SR04 Ultrasonic distance sensor** con la **ESP32** como se muestra en la siguentes imagenes:
 
 3.1 Es importante considerar que para **ESP32** se maneja un ```Voltaje de trabajo 3.3 VDC```. 
 
 a) Observar conexión de  **ESP32**. 
 
-![](https://github.com/DulceMRZ/PRACTICA10_BASE_DE_DATOS_CON_ESPE32/blob/main/Node-RED%20-%20Google%20Chrome%2024_06_2023%2006_08_26%20a.%20m..png?raw=true)
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/CONEXION.PNG?raw=true)
 
 b) Corrobora que el simulador compile bien el programa 
 
-![](https://github.com/DulceMRZ/PRACTICA10_BASE_DE_DATOS_CON_ESPE32/blob/main/Node-RED%20-%20Google%20Chrome%2024_06_2023%2006_09_31%20a.%20m..png?raw=true)
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/COMPILACION.PNG?raw=true)
 
 
 ### 5. Conexión Diagrama en Node - Red
 
-En Node Red, nos estaremos apoyando para poder ver los datos en tiempo real, al momento de estar simularlos. 
+En Node Red, nos estaremos apoyando para poder ver los datos en tiempo real, al momento de simularlos. 
 
 ###### Nota: es importante ya contantar con Node Red previamente descargado, y la IP, con la que estaras trabajando. 
 
-![](https://github.com/DulceMRZ/PRACTICA10_BASE_DE_DATOS_CON_ESPE32/blob/main/Node-RED%20-%20Google%20Chrome%2024_06_2023%2006_03_53%20a.%20m..png?raw=true)
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/CONEXION%20NODE%20RED.PNG?raw=true)
 
 Al inciar tu diagrama de bloques debes ajustar información importante en cada Topico: 
 
 
-a) Para el **Bloque - mqtt in** es importante Seleccionar la opción de "dulce/tokai2" y la IP que se tiene en el programa (44.195.202.69), en tu caso anexaras tus datos. 
+a) Para el **Bloque - mqtt in** es importante Seleccionar la opción de "equipo4" y la IP que se tiene en el programa (44.195.202.69), en tu caso anexaras tus datos. 
 
-![](https://github.com/DulceMRZ/PRACTICA7_ESP32_ULTRASONIC/blob/main/TOPIC_mqtt%20in.PNG?raw=true)
+![]()
 
 
 b) Para el **Bloque - JSON** es importante Seleccionar la opción de "Always convert to JavaScript Object"
@@ -399,18 +399,28 @@ b) Para el **Bloque - JSON** es importante Seleccionar la opción de "Always con
 
 1. Iniciar simulador.
 2. Visualizar los datos en el monitor serial.
-3. Colocar la temperatura y humedad dando *doble click* al sensor **DHT11** 
+3. Colocar la temperatura y humedad dando *doble click* al sensor **DHT22** 
+4. Monitero del Nivel de agua al que el sensor ultrasonico esta operando.
+
 
 ## 7. Resultados
 
 Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
 
-![](https://github.com/DulceMRZ/PRACTICA10_BASE_DE_DATOS_CON_ESPE32/blob/main/Node-RED%20-%20Google%20Chrome%2024_06_2023%2006_04_29%20a.%20m..png?raw=true)
+a) Datos de la ESP32 visualizados en el DASHBOAR de Node - Red
 
-![](https://github.com/DulceMRZ/PRACTICA10_BASE_DE_DATOS_CON_ESPE32/blob/main/Node-RED%20-%20Google%20Chrome%2024_06_2023%2006_04_56%20a.%20m..png?raw=true)
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/DASHBOARD.PNG?raw=true)
+
+b) Base de datos de la incubadora.
+
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/LOCALHOST.PNG?raw=true)
+
+c) Conexión del Circuito en ESP32 corriendo 
+
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/RESULTADOS.PNG?raw=true)
 
 # Créditos
 
-Desarrollado por Dulce M Rodriguez Zarate 
+Desarrollado por David Vargas, Dulce M Rodriguez y Rodrigo Vega
 
 - [GitHub](https://github.com/DulceMRZ)
