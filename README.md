@@ -408,6 +408,9 @@ b) **Datos de la ESP32 visualizados en el Dashboard de Node - Red**
 
 ![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/DASHBOARD.PNG?raw=true)
 
+
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/DASHBOARD2.PNG?raw=true)
+
 c) **Base de datos de la incubadora**
 
 ![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/LOCALHOST.PNG?raw=true)
