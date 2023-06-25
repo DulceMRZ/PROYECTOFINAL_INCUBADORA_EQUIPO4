@@ -1,7 +1,8 @@
-# Proyecto Final: Incubadora de Huevos mediante el modulo ESP32
+# Proyecto Final: 
+# Incubadora de Huevos mediante el modulo ESP32
  
 
-En esta proyecto podemos programar una ESP32 con sensor ultrasonido y DHT22, visualizando los datos mediante NODE-RED y obteniendo una Base de datos para verificar los datos en tiempo real. 
+En este repositorio podrás programar mediante una ```ESP32``` la conexión de un HC-SR04 Ultrasonic Distance Sensor y DHT22, visualizando los datos mediante NODE-RED y obteniendo una Base de datos para verificar los datos en tiempo real. 
 
 ## Contenido 
 
@@ -16,9 +17,10 @@ En esta proyecto podemos programar una ESP32 con sensor ultrasonido y DHT22, vis
 
 ## 1. Introducción
 
-En este proyecto se utilizara una ```Esp32```, la cual nos permite utilizar un entorno de adquision de datos, lo cual en esta practica ocuparemos un ultrasonido (```HC-SR04 Ultrasonic distance sensor```) un sensor (```DTH22```).
+En este proyecto mediante una  ```ESP32```, que nos permite utilizar un entorno de ```adquision de datos```, se realizara una conexión mediante la interfaz de ```Node- Red``` lo cual en esta practica ocuparemos un a través de una conexión remota configurada por Wifi, prodremos obtener los diferentes datos que nos proporcionan los sensores ```DTH22``` y ```HC-SR04 Ultrasonic Distance Sensor```, y también en caso de que sea necesario accionar cada uno de ellos de forma individual para poder establecer los parámetros que creamos oportunos en ese momento.
 
 ### 1.1 Descripción
+
   La ```incubación artificial```, es la incubación de huevos mediante máquinas incubadoras que brindan un medio ambiente adecuado y controlado para que se desarrollen las crías de aves y reptiles. 
   
   A nivel comercial esta ampliamente difundido el uso de incubación artificial para criar gallinas, pavos, patos y codornices.
@@ -45,6 +47,7 @@ Tomar en cuenta el material necesario para realizar esta práctica:
 - Sensor de ultrasonido de distancia 
   (HC-SR04 Ultrasonic distance sensor)
 - Sensor DHT22 (Temperatura/Humedad)
+- Led´s que nos serviran de indicadores fisicos 
 - Programa Node - Red 
 - Programa XAMPP
 
@@ -339,7 +342,7 @@ Serial.println(Temperatura);
 
 2. Instalar las librerias 
    **ArduinoJson** , **DHT SensorLibrary for ESPx**, 
-   **PubSubClient**, **LiquidCristal**
+   **PubSubClient**, **LiquidCristal I2C**
 
 Como se muestra en la siguente imagen.
 
