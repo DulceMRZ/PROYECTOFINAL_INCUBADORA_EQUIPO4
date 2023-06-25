@@ -1,7 +1,7 @@
-# Proyecto Final: Incubadora de Huevos mediante el modulo EPS32
+# Proyecto Final: Incubadora de Huevos mediante el modulo ESP32
  
 
-En esta proyectop podemos programar una ESP32 con sensor ultrasonido y DHT22, visualizando los datos mediante NODE-RED y obteniendo una Base de datos para verificar los datos en tiempo real. 
+En esta proyecto podemos programar una ESP32 con sensor ultrasonido y DHT22, visualizando los datos mediante NODE-RED y obteniendo una Base de datos para verificar los datos en tiempo real. 
 
 ## Contenido 
 
@@ -16,18 +16,12 @@ En esta proyectop podemos programar una ESP32 con sensor ultrasonido y DHT22, vi
 
 ## 1. Introducción
 
-En este proyecto se realizo un 
-
-
-
-
-
-
-
-a ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un ultrasonido (```HC-SR04 Ultrasonic distance sensor```) un sensor (```DTH22```).
+En este proyecto se utilizara una ```Esp32```, la cual nos permite utilizar un entorno de adquision de datos, lo cual en esta practica ocuparemos un ultrasonido (```HC-SR04 Ultrasonic distance sensor```) un sensor (```DTH22```).
 
 ### 1.1 Descripción
-  La ```incubación artificial```, es la incubación de huevos mediante máquinas incubadoras que brindan un medio ambiente adecuado y controlado para que se desarrollen las crías de aves y reptiles.1​2​3​ A nivel comercial esta ampliamente difundido el uso de incubación artificial para criar gallinas, pavos, patos y codornices.
+  La ```incubación artificial```, es la incubación de huevos mediante máquinas incubadoras que brindan un medio ambiente adecuado y controlado para que se desarrollen las crías de aves y reptiles. 
+  
+  A nivel comercial esta ampliamente difundido el uso de incubación artificial para criar gallinas, pavos, patos y codornices.
  
  ### 1.2 Especificación 
 
@@ -35,7 +29,7 @@ a ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta
 
  Debes considerar tener instalo el ```XAMPP```, que nos permite activar un ```mysql```
 
-//imagen
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/XAMPP.PNG?raw=true)
 
 
 ## 2. Objetivo 
@@ -279,14 +273,6 @@ Serial.println(Temperatura);
 // Prints the distance on the Serial Monitor
 //Serial.print("Humedad: ");
 //Serial.println(Humedad);
-
-
-
-
-
-
-
-
 //delay(1000);
   //long t; //timepo   
   //long d; //nivel del agua de la incubadora 
@@ -387,8 +373,9 @@ Al inciar tu diagrama de bloques debes ajustar información importante en cada T
 
 a) Para el **Bloque - mqtt in** es importante Seleccionar la opción de "equipo4" y la IP que se tiene en el programa (44.195.202.69), en tu caso anexaras tus datos. 
 
-![]()
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/Topico.PNG?raw=true)
 
+###### Nota: Es importante recordar que la IP se estara utilizando la de un servidor publico. Se puede tener una propia pero ello tiene un costo adicional. 
 
 b) Para el **Bloque - JSON** es importante Seleccionar la opción de "Always convert to JavaScript Object"
 
@@ -407,17 +394,21 @@ b) Para el **Bloque - JSON** es importante Seleccionar la opción de "Always con
 
 Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
 
-a) Datos de la ESP32 visualizados en el DASHBOAR de Node - Red
+a) **Conexión del Circuito en ESP32 corriendo** 
+
+![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/RESULTADOS.PNG?raw=true)
+
+
+
+
+b) **Datos de la ESP32 visualizados en el Dashboard de Node - Red**
 
 ![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/DASHBOARD.PNG?raw=true)
 
-b) Base de datos de la incubadora.
+c) **Base de datos de la incubadora**
 
 ![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/LOCALHOST.PNG?raw=true)
 
-c) Conexión del Circuito en ESP32 corriendo 
-
-![](https://github.com/DulceMRZ/PROYECTOFINAL_INCUBADORA_EQUIPO4/blob/main/RESULTADOS.PNG?raw=true)
 
 # Créditos
 
